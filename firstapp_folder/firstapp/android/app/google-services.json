@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1042710793896",
+    "project_id": "firstapp-skm",
+    "storage_bucket": "firstapp-skm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042710793896:android:fc1b1a583e3e05bc8c7c9d",
+        "android_client_info": {
+          "package_name": "com.skm.firstapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042710793896-knbff4kfk00j7gjnor2djuadmdupcg13.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3po-VIYrBeoZBCEp4lxpYzZduxeBHBuo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042710793896-knbff4kfk00j7gjnor2djuadmdupcg13.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

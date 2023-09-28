@@ -1,0 +1,140 @@
+Introduction to Dart
+
+//Declaring a variable 
+var name = "samuel" // untyped scripts
+String firstname = "samuel" // for storing string element
+int age = 9; // for storing whole numbers
+boolean yougood = true; // for storing boolean values true or false
+double money = 12.33; // for storing float point values
+
+
+//Function 
+    // Declaring Function   
+        data_type function_name(paraments...){
+            body
+        }
+    
+        String fullname(String firstname, String lastname){
+            return "Your fullname is $firstname and last name is $lastname";
+        }
+
+//List
+  final countries = ["Ghana", "USA", "UK", "Nigeria"];
+
+  print(countries[0]);
+  print(countries[2]);  
+  
+  var friends = ["Samuel", "Kweis", "Mensah"];
+  friends.add("Monica");
+  print(friends);
+
+//Maps
+  var person = {"name": "Samuel", "age": 20, "country": "Ghana"};
+
+  print(person);
+  person["name"] = "Enoch";
+  print(person);
+
+//null safety
+    String? name; // this declared variable can be assigned a value or null "This will not work String name = null"
+    name = null;
+    print(name);
+    name = "samuel";
+    print(name);
+
+    List<String?>? towns = ["cape coast", null, "accra"]; // the list its self can contain null and null values can also be added to it
+     
+     //picking non-null values "??"
+        const String? firstname = null;
+        const String? midddlename = "kwesi";
+        const String? lastname = null;
+
+        const firstNoneNullValue = firstname ?? midddlename ?? lastname;
+        print(firstNoneNullValue);
+    //Null-aware assignment operator ??=
+        String? name = firstName;
+        name ??=
+            middleName; // check if firstname is null and add it to middlename to it, if it is true;
+        print(name);
+
+//Enumeration
+
+//Classes
+    //Creating an a class 
+        class Person {
+            //constructor
+            Person(){
+                //statement
+            }
+
+            //data 
+            String? name;
+            // methods
+            getName(){
+                //
+            }
+        }
+
+    //creating an object
+    final object_name = class_name(); 
+
+    //inheritance
+    class class_B extend class_A {
+
+    }
+
+//Extensions
+    //used to a extends functionalities of previous class
+
+    extension Extension_name on Class_name{
+        //methods
+    }
+//Future 
+    //used to perform asynchronious activities
+        class Persion {
+        String name = "Samuel";
+
+        //creating a method the return a name but it will take 5 sec before it a appears
+        Future<String> getName() {
+            return Future.delayed(const Duration(seconds: 5), () => name);
+        }
+        }
+
+        // adding async to the function: help to used async features
+        // adding await to calling of the methods causes the program to wait before continuing
+        void test() async {
+        final person = Persion();
+        String name = await person.getName();
+        print("Hello, $name");
+        }    
+
+//Stream
+    //creating a stream function that will keep on running
+    Stream<String> name(String name) {
+    return Stream.periodic(const Duration(seconds: 1), (value) {
+        return name;
+    });
+    }
+
+    void test() async {
+
+    //await for function to call stream function
+    await for (final value in name("Samuel")) {
+        print("Hello, $value");
+    }
+    print("ended");
+    }
+
+
+// Create a new flutter app 
+    flutter create --org xxx.domain appname
+
+//firebase dependecies
+    firebase_core, firebase_auth, cloud_firestore, firebase_analytics
+
+    to add dependecies
+    flutter pub add firebase_auth
+
+//install flutterfire 
+
+
