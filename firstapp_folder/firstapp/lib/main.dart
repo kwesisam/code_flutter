@@ -1,4 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firstapp/view/login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'firebase_options.dart';
@@ -12,19 +13,19 @@ void main() {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      home: const LoginView(),
     ),
   );
 }
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
+class RegisterView extends StatefulWidget {
+  const RegisterView({super.key});
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<RegisterView> createState() => _RegisterViewState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _RegisterViewState extends State<RegisterView> {
   late final TextEditingController _email;
   late final TextEditingController _password;
 
@@ -102,5 +103,6 @@ class _HomePageState extends State<HomePage> {
             }));
   }
 }
+
 
 //ended on 9:03
