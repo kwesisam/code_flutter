@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "227017319142",
+    "project_id": "pils-remainder",
+    "storage_bucket": "pils-remainder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227017319142:android:0e25a34fe64275d08cd127",
+        "android_client_info": {
+          "package_name": "com.example.pils_recommendation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqTeFeh4psMcs9ZjGet-A1vujZb94dn-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
